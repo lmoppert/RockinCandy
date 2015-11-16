@@ -20,6 +20,7 @@ body {padding-top:50px;}
     font-style: italic;
 }
 .navbar-fixed-top {border-bottom:0;}
+.navbar-brand {margin-right: 50px;}
 .linkimage {
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
@@ -33,3 +34,4 @@ body {padding-top:50px;}
     -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 h1 {text-align:center;padding-bottom:20px;}
+div#content {margin-top:40px;}

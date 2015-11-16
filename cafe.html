@@ -26,8 +26,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
       </script>
     <![endif]-->
-    {% block header %}
-    {% endblock %}
+    
+    
   </head>
 
   <body>
@@ -67,8 +67,26 @@
     </nav>
 
     <div class="container" id="content">
-      {% block content %}
-      {% endblock %}
+      
+    <div class="row">
+        <div class="col-md-4">
+            <h2>STUDIO & CAFE</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="col-md-8">
+        </div>
+    </div>
+
     </div><!-- /.container -->
 
 
@@ -79,8 +97,12 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    {% block javascript %}
-    {% endblock %}
+    
+<script type="text/javascript">
+    $(function(){
+        $("#nav_cafe").addClass("active");
+    });
+</script>
+
   </body>
 </html>
-

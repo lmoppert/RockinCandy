@@ -26,8 +26,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
       </script>
     <![endif]-->
-    {% block header %}
-    {% endblock %}
+    
+    
   </head>
 
   <body>
@@ -67,8 +67,22 @@
     </nav>
 
     <div class="container" id="content">
-      {% block content %}
-      {% endblock %}
+      
+    <div class="row">
+        <div class="col-md-3">
+            <h2>TATTOO<br>DAS TEAM</h2>
+        </div>
+        <div class="col-md-3">
+            <h3>Frank</h3>
+        </div>
+        <div class="col-md-3">
+            <h3>Nina</h3>
+        </div>
+        <div class="col-md-3">
+            <h3>Nina</h3>
+        </div>
+    </div>
+
     </div><!-- /.container -->
 
 
@@ -79,8 +93,12 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    {% block javascript %}
-    {% endblock %}
+    
+<script type="text/javascript">
+    $(function(){
+        $("#nav_templates").addClass("active");
+    });
+</script>
+
   </body>
 </html>
-
