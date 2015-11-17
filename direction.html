@@ -69,23 +69,39 @@
     <div class="container" id="content">
       
     <div class="row">
-        <div id="cafe" class="col-md-4">
-            <a href="cafe.html">
-                <img src="img/cafe.jpg" alt="Studio & Cafe"
-                    class="linkimage img-responsive" width="75%">
-            </a>
+        <div class="col-md-3">
+            <h2>ANFAHRT</h2>
+            <address>
+                <strong>Rockin' Candy Tattoo</strong><br>
+                Brückenstraße 52<br>
+                42799 Leichlingen<br>
+                <br>
+                <em>Telefon:</em> 01577 - 585 94 17<br>
+                <br>
+                <em>E-Mail:</em>
+                <a href="info@rockincandy-tattoo.de">
+                    info@rockincandy-tattoo.de
+                </a><br>
+                <br>
+                <em>Facebook:</em>
+                <a href="https://www.facebook.com/RockinCandyTattoo">
+                    https://www.facebook.com/RockinCandyTattoo
+                </a>
+            </address>
+            <h3>Öffnungszeiten</h3>
+            <table>
+                <tr>
+                    <th>Mo. - Fr.</th>
+                    <td>12 - 18 Uhr</td>
+                </tr><tr>
+                    <th>Sa.</th>
+                    <td>12 - 16 Uhr</td>
+                </tr>
+            </table>
         </div>
-        <div id="tattoo" class="col-md-4">
-            <a href="tattoo.html">
-                <img src="img/tattoo.jpg" alt="Tattoo"
-                    class="linkimage img-responsive" width="75%">
-            </a>
-        </div>
-        <div id="templates" class="col-md-4">
-            <a href="templates.html">
-                <img src="img/templates.jpg" alt="Templates"
-                    class="linkimage img-responsive" width="75%">
-            </a>
+        <div class="col-md-9 map">
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:600px;width:800px;'><div id='gmap_canvas' style='height:600px;width:800px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><a href='http://maps-generator.com/'>Maps Generator</a>
+<script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(51.09784663494017,7.0089204414558814),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.09784663494017,7.0089204414558814)});infowindow = new google.maps.InfoWindow({content:'<strong>Rockin\' Candy Tattoo</strong><br>Brückenstraße 52<br>42799  Leichlingen<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
         </div>
     </div>
 
@@ -100,6 +116,11 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     
-    
+<script type="text/javascript">
+    $(function(){
+        $("#nav_direction").addClass("active");
+    });
+</script>
+
   </body>
 </html>
