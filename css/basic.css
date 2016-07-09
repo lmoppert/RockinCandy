@@ -1,4 +1,4 @@
-body {padding-top:50px;}
+html, body {height: 100%}
 @font-face {
     font-family: 'Caviar Dreams';
     src: url('../fonts/CaviarDreams.ttf') format('truetype');
@@ -19,21 +19,10 @@ body {padding-top:50px;}
     font-weight: bold;
     font-style: italic;
 }
+#content {padding:150px 0 60px; margin: 0 auto -60px; min-height:100%;}
+#footer {height:60px;padding-top:20px;}
 .navbar-nav {font-size:22px}
 .navbar-fixed-top {border-bottom:0;}
 .navbar-brand {font-size:180%; font-weight:bold;  margin-right: 20px;}
-.linkimage {
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
-    margin-bottom:20px;
-}
-.linkimage:hover {
-    filter: none; /* IE6-9 */
-    -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
-}
 h1 {text-align:center;padding-bottom:20px;}
-#content {padding-top:150px;}
 .map {color:#222;}

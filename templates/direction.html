@@ -1,29 +1,36 @@
 {% extends "_base.html" %}
 {% block content %}
+<div class="container">
     <div class="row">
-        <div class="col-md-3">
-            <h2>ANFAHRT</h2>
+        <div class="col-md-4">
+            <h3>Anfahrt</h3>
             <address>
                 <strong>Rockin' Candy Tattoo</strong><br>
+                Frank Niggemann<br>
                 Brückenstraße 52<br>
                 42799 Leichlingen<br>
-                <br>
-                <em>Telefon:</em> 01577 - 585 94 17<br>
-                <br>
-                <em>E-Mail:</em>
-                <a href="info@rockincandy-tattoo.de">
-                    info@rockincandy-tattoo.de
-                </a><br>
-                <br>
-                <em>Facebook:</em>
-                <a href="https://www.facebook.com/RockinCandyTattoo">
-                    https://www.facebook.com/RockinCandyTattoo
-                </a>
             </address>
+            <h3>Kontakt</h3>
+            <table>
+                <tr>
+                    <th>Telefon:</th>
+                    <td>01577 - 585 94 17</td>
+                </tr><tr>
+                    <th>E-Mail:</th>
+                    <td><a href="info@rockincandy-tattoo.de">
+                        info@rockincandy-tattoo.de
+                    </a></td>
+                </tr><tr>
+                    <th>Facebook: &nbsp;</th>
+                    <td><a href="https://www.facebook.com/RockinCandyTattoo">
+                       RockinCandyTattoo
+                    </a></td>
+                </tr>
+            </table>
             <h3>Öffnungszeiten</h3>
             <table>
                 <tr>
-                    <th>Mo. - Fr.</th>
+                    <th>Mo. - Fr. &nbsp;</th>
                     <td>12 - 18 Uhr</td>
                 </tr><tr>
                     <th>Sa.</th>
@@ -31,11 +38,14 @@
                 </tr>
             </table>
         </div>
-        <div class="col-md-9 map">
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:600px;width:800px;'><div id='gmap_canvas' style='height:600px;width:800px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><a href='http://maps-generator.com/'>Maps Generator</a>
-<script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(51.09784663494017,7.0089204414558814),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.09784663494017,7.0089204414558814)});infowindow = new google.maps.InfoWindow({content:'<strong>Rockin\' Candy Tattoo</strong><br>Brückenstraße 52<br>42799  Leichlingen<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        <div class="col-md-8">
+            <h3>Karte</h3>
+            <div class="map">
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:600px;width:600px;'><div id='gmap_canvas' style='height:600px;width:600px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://onlinecasinospielautomaten.com'>Casinos mit Echtgeld</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=30b472f774cd4bc0db590744dad708c76b48e204'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(51.10294,7.01057000000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.10294,7.01057000000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Rockin\' Candy Tattoo</strong><br>Brückenstraße 52<br>42799 Leichlingen<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+            </div>
         </div>
     </div>
+</div>
 {% endblock %}
 {% block javascript %}
 <script type="text/javascript">
