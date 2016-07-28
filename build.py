@@ -9,11 +9,15 @@ def studio():
 
 
 def frank():
-    return {'images': glob.glob('media/Frank*.jpg')}
+    images = glob.glob('media/Frank*.jpg')
+    images.sort()
+    return {'images': images}
 
 
 def nina():
-    return {'images': glob.glob('media/Nina*.jpg')}
+    images = glob.glob('media/Nina*.jpg')
+    images.sort()
+    return {'images': images}
 
 
 if __name__ == "__main__":
