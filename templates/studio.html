@@ -1,0 +1,26 @@
+{% extends "_base.html" %}
+{% block content %}
+<div class="container">
+    <h2>STUDIO</h2>
+    <p>
+    Hier ein paar Bilder von unserem neuen Studio.
+    </p>
+    <div class="row">
+        {% for image in images %}
+        <div class="col-xs-6 col-md-3">
+            <a href="{{ image }}" class="thumbnail" data-lightbox="frank">
+                <img src="{{ image }}" alt="Foto vom Studio"
+                    class="grayscale grayscale-fade img-responsive">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script type="text/javascript">
+    $(function(){
+        $("#nav_studio").addClass("active");
+    });
+</script>
+{% endblock %}
