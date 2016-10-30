@@ -1,0 +1,31 @@
+{% extends "_base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h2>TERMINE</h2>
+        </div>
+        <div class="col-md-9 bigtext">
+            <p>
+            Gesprächstermine finden während unserer Öffnungszeiten statt -
+            eine Voranmeldung ist dafür nicht erforderlich. Ihr könnt also
+            jederzeit vorbei kommen. Per E-Mail oder am Telefon können wir
+            leider keine Termine vergeben.
+            </p><p>
+            Im Rahmen des Beratungsgesprächs vergeben wir die Termine für Dein
+            neues Tattoo.
+            </p><p>
+            Bitte beachten: Es werden ausschließlich Termine vor Ort und gegen
+            eine Anzahlung vergeben.  Wir freuen uns auf euren Besuch.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascript %}
+<script type="text/javascript">
+    $(function(){
+        $("#nav_templates").addClass("active");
+    });
+</script>
+{% endblock %}

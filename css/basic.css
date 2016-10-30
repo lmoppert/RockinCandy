@@ -19,10 +19,20 @@ html, body {height: 100%}
     font-weight: bold;
     font-style: italic;
 }
-#content {padding:150px 0 60px; margin: 0 auto -60px; min-height:100%;}
+#content {padding:150px 0 60px; margin: 0 auto -60px; min-height:95%;}
 #footer {height:60px;padding-top:20px;}
 .navbar-nav {font-size:22px}
 .navbar-fixed-top {border-bottom:0;}
 .navbar-brand {font-size:180%; font-weight:bold;  margin-right: 20px;}
 h1 {text-align:center;padding-bottom:20px;}
 .map {color:#222;}
+a:hover h3, a:active h3, a:visited h3, a:link h3 {color:#fff;}
+.bigtext p {font-size: 125%;padding-bottom:.5em}
+@media (max-height: 800px) and (min-width: 990px) {
+    #tattoo_index img {height: 450px}
+}
+@media (max-height: 800px) {
+    #content {padding:50px 0 60px;}
+    .navbar-nav li a {font-size:18px;padding-top:20px;padding-bottom:20px}
+    .navbar {min-height: 60px;}
+}

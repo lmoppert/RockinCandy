@@ -1,5 +1,6 @@
 from staticjinja import make_site
 import glob
+import os
 
 
 def studio():
@@ -8,20 +9,18 @@ def studio():
     return {'images': images}
 
 
-def frank():
-    images = glob.glob('media/Frank*.jpg')
+def images(template):
+    folder = template.name.split('.')[0]
+    images = os.listdir("media/{}".format(folder))
     images.sort()
-    return {'images': images}
-
-
-def nina():
-    images = glob.glob('media/Nina*.jpg')
-    images.sort()
-    return {'images': images}
+    return {'images': images, 'folder': folder}
 
 
 if __name__ == "__main__":
     site = make_site(contexts=[
-        ('nina.html', nina), ('frank.html', frank), ('studio.html', studio),
+        ('nina.html', images),
+        ('frank.html', images),
+        ('maike.html', images),
+        ('studio.html', studio),
     ])
     site.render(use_reloader=True)
