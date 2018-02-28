@@ -21,6 +21,7 @@ if __name__ == "__main__":
         ('nina.html', images),
         ('frank.html', images),
         ('maike.html', images),
+        ('fabi.html', images),
         ('studio.html', studio),
     ])
     site.render(use_reloader=True)
